@@ -1,3 +1,5 @@
+namespace BudgetTracker.src;
+
 public class Transaction
 {
     public string Category { get; set; }

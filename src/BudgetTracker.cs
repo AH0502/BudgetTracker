@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace BudgetTracker;
+namespace BudgetTracker.src;
 
 public class BudgetTracker
 {
@@ -20,6 +20,18 @@ public class BudgetTracker
         {
             if (transaction.Type == "Income")
                 income += transaction.Amount;
+            else
+                expense += transaction.Amount;
+        }
+        Console.WriteLine($"\nSummary:\nTotal Income: ${income}\nTotal Expense: ${expense}\nBalance: ${income - expense}\n");
+    }
+
+    public void ListTransactions()
+    {
+        Console.WriteLine("\nAll Transactions:");
+        foreach (var transaction in transactions)
+        {
+            Console.WriteLine(transaction);
         }
     }
 }
