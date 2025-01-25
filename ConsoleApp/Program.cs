@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Common;
 
-namespace BudgetTracker.src;
+namespace ConsoleApp;
 
 class Program
 {

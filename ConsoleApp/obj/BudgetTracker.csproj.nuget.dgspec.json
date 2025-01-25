@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/BudgetTracker.csproj": {}
+    "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/ConsoleApp/BudgetTracker.csproj": {}
   },
   "projects": {
-    "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/BudgetTracker.csproj": {
+    "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/ConsoleApp/BudgetTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/BudgetTracker.csproj",
+        "projectUniqueName": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/ConsoleApp/BudgetTracker.csproj",
         "projectName": "BudgetTracker",
-        "projectPath": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/BudgetTracker.csproj",
+        "projectPath": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/ConsoleApp/BudgetTracker.csproj",
         "packagesPath": "/Users/alexanderhagopian/.nuget/packages/",
-        "outputPath": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/obj/",
+        "outputPath": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/ConsoleApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alexanderhagopian/.nuget/NuGet/NuGet.Config"

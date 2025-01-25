@@ -1,4 +1,4 @@
-namespace BudgetTracker.src;
+namespace ConsoleApp;
 
 public class Transaction
 {

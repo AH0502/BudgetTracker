@@ -1,11 +1,21 @@
 using System.Collections.Generic;
+using System.IO;
 using System;
 
-namespace BudgetTracker.src;
+namespace ConsoleApp;
 
 public class BudgetTracker
 {
     private List<Transaction> transactions = new List<Transaction>();
+
+    public void SaveTransaction(String filepath)
+    {
+        using (var writer = new StreamWriter(filepath))
+        {
+            foreach (var transaction in transactions)
+                writer.WriteLine($"{transaction.Id},{transaction.Category}, {transaction.Amount},{transaction.Date},{transaction.Type} ");
+        }
+    }
 
     public void AddTransaction (Transaction transaction)
     {
