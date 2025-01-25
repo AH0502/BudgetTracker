@@ -1,25 +1,13 @@
-using System.Collections.Generic;
-using System
-
-namespace BudgetTracker;
-
-public class BudgetTracker
+public class Transaction
 {
-    private List<Transaction> transactions = new List<Transaction>();
+    public string Category { get; set; }
+    public decimal Amount { get; set; }
+    public DateTime Date { get; set; }
+    public string Type { get; set; } // "Income" or "Expense"
 
-    public void AddTransaction (Transaction transaction)
+    public override string ToString()
     {
-        transactions.Add(transaction);
-        Console.WriteLine("Transaction added successfully!");
-    }
+        return $"{Date.ToShortDateString()} - {Category}: {Type} ${Amount}";
 
-    public void DisplaySummary()
-    {
-        decimal income = 0, expense = 0;
-        foreach (var transaction in transactions)
-        {
-            if (transaction.Type == "Income")
-                income += transaction.Amount;
-        }
     }
-}
+}  
