@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Data.Common;
 
 namespace BudgetTracker.src;
 
@@ -8,7 +9,8 @@ class Program
     static void Main()
     {
         BudgetTracker budgetTracker = new BudgetTracker();
-
+        int i = 0;
+        int id;
         while (true)
         {
             Console.WriteLine("\n Welcome to the Budget Tracker!");
@@ -23,6 +25,8 @@ class Program
             switch (choice)
             {
                 case "1":
+                    i++;
+                    id = i;
                     Console.Write("Enter Category: ");
                     string category = Console.ReadLine();
 
@@ -34,6 +38,7 @@ class Program
 
                     budgetTracker.AddTransaction(new Transaction
                     {
+                        Id = id,
                         Category = category,
                         Amount = amount,
                         Date = DateTime.Now,
