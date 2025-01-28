@@ -13,7 +13,7 @@ This project allows the user to keep track of their budget. Users can add income
 2. Nagigate to the project directory: 
     >cd BudgetTracker/ConsoleApp
 3. Run the application: 
-    >dotnet build
+    >dotnet build\
     >dotnet run
     
 
