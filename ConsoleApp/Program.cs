@@ -16,7 +16,8 @@ class Program
             Console.WriteLine("1. Add Transaction");
             Console.WriteLine("2. View Summary");
             Console.WriteLine("3. List All Transactions");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Save Transactions");
+            Console.WriteLine("5. Exit");
             Console.WriteLine("Select an option: ");
 
             string choice = Console.ReadLine();
@@ -54,6 +55,10 @@ class Program
                     break;
 
                 case "4":
+                    budgetTracker.SaveTransaction("../transaction.csv");
+                    return;
+
+                case "5":
                     Console.WriteLine("Goodbye!");
                     return;
 
