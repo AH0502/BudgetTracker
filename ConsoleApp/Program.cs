@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Common;
+using System.Reflection.Metadata.Ecma335;
 
 namespace ConsoleApp;
 
@@ -28,7 +29,11 @@ class Program
                     i++;
                     id = i;
                     Console.Write("Enter Category: ");
-                    string category = Console.ReadLine();
+                    string name = Console.ReadLine();
+                    Console.Write("Enter Description: ");
+                    string description = Console.ReadLine();
+
+                    var category = new Category(name, description);
 
                     Console.WriteLine("Enter Amount: ");
                     decimal amount = Convert.ToDecimal(Console.ReadLine());

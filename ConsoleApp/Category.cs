@@ -2,7 +2,7 @@ namespace ConsoleApp;
 
 public class Category
 {
-    public required string Name { get; set; }
+    public string Name { get; set; }
     public string? Description { get; set; }
 
     public Category(string name, string description = "")
