@@ -13,10 +13,8 @@ This project allows the user to keep track of their budget. Users can add income
 2. Nagigate to the project directory:\
     `cd BudgetTracker/ConsoleApp`
 3. Run the application: 
-   1. Make run.sh executable:
-   'chmod +x run.sh'
-   2. Run the script:
-   './run.sh'
+   1. Run the script:
+   `./run.sh`
 ## [Issues](https://github.com/AH0502/BudgetTracker/issues)
 **Updated 1-27-2024**
 1. Transaction Categorization 
