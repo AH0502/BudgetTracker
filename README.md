@@ -12,8 +12,7 @@ This project allows the user to keep track of their budget. Users can add income
     `git clone https://github.com/AH0502/BudgetTracker.git`
 2. Nagigate to the project directory:\
     `cd BudgetTracker/ConsoleApp`
-3. Run the application: 
-   1. Run the script:\
+3. Run the application:\
    `./run.sh`
 ## [Issues](https://github.com/AH0502/BudgetTracker/issues)
 **Updated 1-27-2024**
