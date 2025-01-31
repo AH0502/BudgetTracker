@@ -4,6 +4,7 @@ This project allows the user to keep track of their budget. Users can add income
 
 ## Tech Stack
 * C#/.NET
+* Bash
 * Visual Studio Code
 
 ## Installation
