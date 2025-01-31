@@ -1,5 +1,5 @@
 /ConsoleApp/bin/
 /ConsoleApp/obj
-/BlazorApp1/bin/
+/BlazorApp1/bin/Debug/net8.0
 /BlazorApp1/obj/
 /BudgetTracker/auto_commit.sh
