@@ -19,7 +19,7 @@ public class BudgetTracker
         }
     }
 
-    public static void ImportTransactions(String filepath, BudgetTracker tracker)
+    public void ImportTransactions(String filepath)
     {
 
         using var parser = new TextFieldParser(filepath);
@@ -39,7 +39,7 @@ public class BudgetTracker
             var cat = new Category(category);
 
 
-            tracker.AddTransaction(new Transaction
+            this.AddTransaction(new Transaction
             {
                 Id = id,
                 Category = cat,
@@ -56,6 +56,11 @@ public class BudgetTracker
     {
         transactions.Add(transaction);
         Console.WriteLine("Transaction added successfully!");
+    }
+
+    public void ClearTransactions()
+    {
+        this.transactions.Clear();
     }
 
     public void DisplaySummary()
