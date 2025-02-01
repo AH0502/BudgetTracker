@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System;
+using Microsoft.VisualBasic.FileIO;
+
 
 namespace ConsoleApp;
 
@@ -15,6 +17,39 @@ public class BudgetTracker
             foreach (var transaction in transactions)
                 writer.WriteLine($"{transaction.Id},{transaction.Category}, {transaction.Amount},{transaction.Date},{transaction.Type} ");
         }
+    }
+
+    public static void ImportTransactions(String filepath, BudgetTracker tracker)
+    {
+
+        using var parser = new TextFieldParser(filepath);
+    
+        parser.TextFieldType = FieldType.Delimited; // Default value is delimited 
+        parser.SetDelimiters(new string[] {","});
+
+        while (!parser.EndOfData)
+        {
+            var row = parser.ReadFields();
+            int id = Int32.Parse(row[0]);
+            string category = row[1];
+            decimal amount = Decimal.Parse(row[2]);
+            DateTime date = DateTime.Parse(row[3]);
+            string type = row[4];
+
+            var cat = new Category(category);
+
+
+            tracker.AddTransaction(new Transaction
+            {
+                Id = id,
+                Category = cat,
+                Amount = amount,
+                Date = date,
+                Type = type
+            });
+
+        }
+
     }
 
     public void AddTransaction (Transaction transaction)

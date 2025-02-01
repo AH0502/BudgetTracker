@@ -8,7 +8,10 @@ class Program
 {
     static void Main()
     {
-        BudgetTracker budgetTracker = new BudgetTracker();
+        var budgetTracker = new BudgetTracker();
+        BudgetTracker.ImportTransactions("../transaction", budgetTracker);
+        Console.WriteLine("Transactions loaded successfully!");
+      
         int i = 0;
         int id;
         while (true)
