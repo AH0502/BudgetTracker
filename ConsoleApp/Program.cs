@@ -16,14 +16,16 @@ class Program
         int id;
         while (true)
         {
-            Console.WriteLine("\n Welcome to the Budget Tracker!"); // will implement home method at some point
+            /* Console.WriteLine("\n Welcome to the Budget Tracker!"); // will implement home method at some point
             Console.WriteLine("1. Add Transaction");
             Console.WriteLine("2. Clear Transactions");
             Console.WriteLine("3. View Summary");
             Console.WriteLine("4. List All Transactions");
             Console.WriteLine("5. Save Transactions");
-            Console.WriteLine("Q. Exit");
-            Console.WriteLine("Select an option: ");
+            Console.WriteLine("q. Exit");
+            Console.WriteLine("Select an option: "); */
+
+            Menu.DisplayMain();
 
             string choice = Console.ReadLine();
 
@@ -32,7 +34,7 @@ class Program
                 case "1":
                     i++;
                     id = i;
-                    Console.Write("Enter Category: ");
+                    /* Console.Write("Enter Category: ");
                     string name = Console.ReadLine();
                     Console.Write("Enter Description: ");
                     string description = Console.ReadLine();
@@ -51,8 +53,9 @@ class Program
                         Category = category,
                         Amount = amount,
                         Date = DateTime.Now,
-                        Type = type
-                    });
+                        Type = type */
+                    Menu.CreateTransaction(id, budgetTracker);
+                    
                     break;
 
                 case "2":
@@ -73,7 +76,7 @@ class Program
                     Console.WriteLine("Transaction(s) saved!");
                     break;
 
-                case "Q":
+                case "q":
                     Console.WriteLine("Goodbye!");
                     return;
 

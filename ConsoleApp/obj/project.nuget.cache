@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/dy0ZoNyM1w=",
+  "dgSpecHash": "JlWzXXA6kvE=",
   "success": true,
   "projectFilePath": "/Users/alexanderhagopian/Documents/Projects/BudgetTracker/ConsoleApp/BudgetTracker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/alexanderhagopian/.nuget/packages/microsoft.netcore.app.ref/8.0.12/microsoft.netcore.app.ref.8.0.12.nupkg.sha512",
+    "/Users/alexanderhagopian/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.12/microsoft.aspnetcore.app.ref.8.0.12.nupkg.sha512",
+    "/Users/alexanderhagopian/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.12/microsoft.netcore.app.host.osx-arm64.8.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
