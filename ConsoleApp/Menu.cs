@@ -11,9 +11,10 @@ public class Menu
         Console.WriteLine("Welcome to the Budget Tracker!");
         Console.WriteLine("1. Add Transaction");
         Console.WriteLine("2. Clear Transactions");
-        Console.WriteLine("3. View Summary");
-        Console.WriteLine("4. List All Transactions");
-        Console.WriteLine("5. Save Transactions");
+        Console.WriteLine("3. Edit Transactions");
+        Console.WriteLine("4. View Summary");
+        Console.WriteLine("5. List All Transactions");
+        Console.WriteLine("6. Save Transactions");
         Console.WriteLine("q. Exit");
         Console.WriteLine("Select an option: ");
         Console.WriteLine("+---------------------------------+");

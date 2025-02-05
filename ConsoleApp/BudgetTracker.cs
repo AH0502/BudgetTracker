@@ -63,6 +63,15 @@ public class BudgetTracker
         this.transactions.Clear();
     }
 
+    public void EditTransaction()
+    {
+        Console.WriteLine("Enter Transaction ID: ");
+        int transaction_id = Convert.ToInt32(Console.ReadLine()) - 1;  // <-- Want to clean this up
+        Console.WriteLine("Enter Amount: ");                            // Fixed for now, 
+        decimal amount = Convert.ToDecimal(Console.ReadLine());         // Need to address "out of bounds" issue
+        this.transactions[transaction_id].Amount = amount;
+    }
+
     public void DisplaySummary()
     {
         decimal income = 0, expense = 0;

@@ -63,15 +63,20 @@ class Program
                     Console.WriteLine("Transaction(s) cleared!");
                     break;
 
-                case "3":
+                 case "3":
+                    budgetTracker.EditTransaction();
+                    break;
+
+
+                case "4":
                     budgetTracker.DisplaySummary();
                     break;
 
-                case "4":
+                case "5":
                     budgetTracker.ListTransactions();
                     break;
 
-                case "5":
+                case "6":
                     budgetTracker.SaveTransaction("../transaction.csv");
                     Console.WriteLine("Transaction(s) saved!");
                     break;
