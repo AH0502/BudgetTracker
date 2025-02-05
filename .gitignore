@@ -1,3 +1,4 @@
 /ConsoleApp/bin/
 /ConsoleApp/obj
-./transaction.csv
+/ConsoleApp/transaction.csv
+/ConsoleApp/bin/Debug/net8.0
